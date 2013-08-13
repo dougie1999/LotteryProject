@@ -1,6 +1,22 @@
 <HTML>
 <HEAD>
 <TITLE>Test Lottery Page</TITLE>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script>
+function generateLuckyDip()
+{
+ document.getElementById("n1").value="7";
+ document.getElementById("n2").value="12";
+ document.getElementById("n3").value="27";
+ document.getElementById("n4").value="34";
+ document.getElementById("n5").value="36";
+ document.getElementById("n6").value="39";
+
+
+}
+
+</script>
+
 </HEAD>
 <BODY>
 <H1 id="heading">Hello this is the Page Heading</H1>
@@ -9,6 +25,24 @@
 
 <div id="d2">This is the second div section</div>
 
+<p id="p1">This is the first paragraph. The aim of this is to use Javascript to generate 6 random lottery numbers. The numbers must be unique and sorted numerically. The Range of the numbers is from 1 - 49 inclusive. </p>
+
+
+<div id="form_div">
+<form>
+Number 1:<input type="text" name="n1" id="n1" size="2"><br>
+Number 2:<input type="text" name="n2" id="n2"  size="2"><br>
+Number 3:<input type="text" name="n3" id="n3"  size="2"><br>
+Number 4:<input type="text" name="n4" id="n4"  size="2"><br>
+Number 5:<input type="text" name="n5" id="n5"  size="2"><br>
+Number 6:<input type="text" name="n6" id="n6"  size="2"><br>
+
+<input type="submit" value="Generate Random Numbers" onclick="generateLuckyDip()">
+<input type="reset" value="Reset">
+
+</form> 
+
+</div>
 
 </BODY>
 </HTML>
